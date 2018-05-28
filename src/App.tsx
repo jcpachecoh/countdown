@@ -11,7 +11,14 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <CountdownContainer futureDate={new Date('Sep 5, 2018 15:37:25')} />
+          <CountdownContainer
+            futureDate={new Date('Sep 5, 2018 15:37:25')}
+            showMonths={true}
+            showDays={true}
+            showMinutes={true}
+            showHours={true}
+            showSeconds={true}
+          />
         </div>
       </Provider>
 

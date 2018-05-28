@@ -1,8 +1,9 @@
-import { SET_COUNTDOWN_DATE, CountdownActions, SET_DAYS, SET_MINUTES, SET_HOURS, SET_SECONDS } from '../actions/index';
+import { SET_COUNTDOWN_DATE, CountdownActions, SET_DAYS, SET_MINUTES, SET_HOURS, SET_SECONDS, SET_MONTHS } from '../actions/index';
 const newObject = (state: any, newData: any) => Object.assign({}, state, newData);
 
 export const defaultCountdown = {
     countdownDate: '2018-05-28T04:00:50.332Z',
+    months: '',
     days: '',
     hours: '',
     minutes: '',
@@ -18,6 +19,15 @@ export const countdownReducer = (state = defaultCountdown, action: CountdownActi
                 state,
                 {
                     countdownDate: action.payload,
+                }
+            );
+        case SET_MONTHS:
+            let months = Math.floor((distance / (1000 * 60 * 60 * 24)) / 30);
+            console.log(months);
+            return newObject(
+                state,
+                {
+                    months: months,
                 }
             );
         case SET_DAYS:

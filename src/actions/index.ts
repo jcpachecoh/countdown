@@ -10,6 +10,8 @@ export const SET_MINUTES = 'SetMinutes';
 export type SET_MINUTES = typeof SET_MINUTES;
 export const SET_SECONDS = 'SetSeconds';
 export type SET_SECONDS = typeof SET_SECONDS;
+export const SET_MONTHS = 'SetMonths';
+export type SET_MONTHS = typeof SET_MONTHS;
 
 export class SetCountdownDate implements Action {
     type: SET_COUNTDOWN_DATE;
@@ -63,8 +65,19 @@ export function setSeconds(): SetSeconds {
     };
 }
 
+export class SetMonths implements Action {
+    type: SET_MONTHS;
+}
+
+export function setMonths(): SetMonths {
+    return {
+        type: SET_MONTHS
+    };
+}
+
 export type CountdownActions =
     SetCountdownDate |
+    SetMonths |
     SetDays |
     SetHours |
     SetMinutes |
