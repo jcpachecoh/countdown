@@ -1,0 +1,22 @@
+body, h1, h2, div {
+  top: 0;
+  left: 0; }
+
+.countdown-app {
+  margin: 20px 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; }
+  .countdown-app b {
+    display: block;
+    padding: 10px 10px; }
+  .countdown-app .box-date {
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #f7f7f7;
+    display: inline-block;
+    padding: 10px 30px; }
+    .countdown-app .box-date h2 {
+      color: #000;
+      text-align: center; }
+    .countdown-app .box-date b {
+      font-size: 18px; }
