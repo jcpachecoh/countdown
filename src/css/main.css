@@ -5,7 +5,8 @@ body, h1, h2, div {
 .countdown-app {
   margin: 20px 20px;
   letter-spacing: 0.06em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .countdown-app b {
     display: block;
     padding: 10px 10px; }

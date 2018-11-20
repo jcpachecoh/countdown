@@ -12,7 +12,7 @@ class App extends React.Component {
       <Provider store={store}>
         <div className="App">
           <CountdownContainer
-            futureDate={new Date('Sep 5, 2018 15:37:25')}
+            futureDate={new Date('Dec 31, 2018 12:00:00')}
             showMonths={true}
             showDays={true}
             showMinutes={true}
